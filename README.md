@@ -11,10 +11,10 @@ The structure of this repository complies to a pattform.io project.
 
 Using an Arduino IDE you may need to move the source files of the lib folder to the main folder. I'm not using the Arduino IDE anymore. The VS-Code/platform.io IDE is much more confortable and I recommend to use it instead.
 
-To change the oversampling and filter coefficients of the BME280 device, please edit the parameters in the BME280wrapper::setup function directly. My approach was to achieve the higest precision available against lowest power consumption possible.
+To change the oversampling and filter coefficients of the BME280 device, please edit the parameters in the BME280wrapper::setup function directly. My approach was to achieve the highest precision available against lowest power consumption possible.
 
 To minimize the power consumption when battery powered you may supply the BME280 by a switchable GPIO output of the ESP8266.
 This means a hard reset for the BME280 in every deep sleep loop and may result in slightly higher noise.
 
-If you wannt to run the ESP8266 in deep sleep loop just uncomment the line "#define ESP_DEEP_SLEEP" in main.cpp.
+If you want to run the ESP8266 in deep sleep loop just uncomment the line "#define ESP_DEEP_SLEEP" in main.cpp.
 Please note that a functional deep sleep loop requires D8 (GPIO16) to be connectet to RST pin of the ESP8266.
