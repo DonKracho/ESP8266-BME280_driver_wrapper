@@ -1,3 +1,8 @@
+# This repository is not maintained anymore!
+
+Please refer to new ESPhome repository:
+[ESPHome-component-BME280-I2C](https://github.com/DonKracho/ESPHome-component-BME280-I2C)
+
 # ESP8266-BME280_driver_wrapper
 
 There are several approaches for a BME280 interface class, this is one of them. I had issues with high noise.
